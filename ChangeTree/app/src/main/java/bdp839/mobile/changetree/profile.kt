@@ -13,7 +13,5 @@ class profile: Fragment(){
 
     companion object{
         fun newInstance(): profile = profile()
-
-
     }
 }

@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        toolbar = supportActionBar!!
+
         val bottomNav: BottomNavigationView = findViewById(R.id.navigation_bar)
         bottomNav.setOnNavigationItemSelectedListener(navigation_item_select)
 
