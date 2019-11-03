@@ -9,14 +9,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
 class searchCharities: Fragment(){
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?):
-            View? = inflater.inflate(R.layout.search_charities, container, false)
-
-    companion object{
-        fun newInstance(): searchCharities = searchCharities()
-    }
-
 //    override fun onCreate(savedInstanceState: Bundle?) {
 //        super.onCreate(savedInstanceState)
 //        setContentView(R.layout.search)
@@ -28,4 +20,11 @@ class searchCharities: Fragment(){
 //            }
 //        }
 //    }
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?):
+            View? = inflater.inflate(R.layout.search_charities, container, false)
+
+
+    companion object{
+        fun newInstance(): searchCharities = searchCharities()
+    }
 }

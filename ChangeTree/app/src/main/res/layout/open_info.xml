@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_title"
+            android:scaleType="centerCrop">
+        </ImageView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-800-RUNAWAY"
+        android:textSize="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://www.1800runaway.org/"
+        android:textSize="12sp"
+        android:layout_marginStart="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-800-RUNAWAY"
+        android:textSize="12sp"
+        android:layout_marginStart="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR CONTRIBUTION"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$4.20"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The mission of the National Runaway Safeline (NRS) is to keep America's runaway, homeless and at-risk youth safe and off the streets."
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beginning as that National Runaway Switchboard, and now as National Runaway Safeline, NRS' capabilities and services have grown considerably."
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NRS makes about 100,00 connections to help and hope through its hotline, online and offline services."
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The 1-800-RUNAWAY hotline and 1800RUNAWAY.org online crisis services are available 24-hours a day, 7 days a week and 365 days a year throughout the United States and its territories, including Puerto Rico, the U.S. Virgin Islands, and Guam."
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+</LinearLayout>
