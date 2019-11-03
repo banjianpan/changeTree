@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:id="@+id/current_charities">
     <LinearLayout
+        android:id="@+id/topPanel"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:orientation="vertical"
-        android:background="@color/colorAccent">
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,9 +33,11 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/secondPanel"
         android:layout_width="match_parent"
         android:layout_height="140dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/topPanel">
         <LinearLayout
             android:layout_width="130dp"
             android:layout_height="80dp"
@@ -41,6 +47,7 @@
             android:layout_marginStart="50sp"
             android:elevation="2dp">
             <ImageView
+                android:id="@+id/aclu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ch1"
@@ -65,9 +72,11 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/thirdPanel"
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/secondPanel">
         <LinearLayout
             android:layout_width="130dp"
             android:layout_height="80dp"
@@ -100,9 +109,11 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/fourthPanel"
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/thirdPanel">
         <LinearLayout
             android:layout_width="130dp"
             android:layout_height="80dp"
@@ -137,7 +148,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/fourthPanel">
         <LinearLayout
             android:layout_width="130dp"
             android:layout_height="80dp"
@@ -169,4 +181,10 @@
             </ImageView>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cur_change_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
