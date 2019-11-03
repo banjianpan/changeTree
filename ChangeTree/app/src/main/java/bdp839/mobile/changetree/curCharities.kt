@@ -13,5 +13,6 @@ class curCharities: Fragment(){
 
     companion object{
         fun newInstance(): curCharities = curCharities()
+
     }
 }

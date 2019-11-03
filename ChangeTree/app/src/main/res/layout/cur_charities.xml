@@ -48,6 +48,7 @@
             </ImageView>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/getInfo"
             android:layout_width="130dp"
             android:layout_height="80dp"
             android:orientation="vertical"
