@@ -1,21 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/card"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:text="Arts, Culture, and Humanities"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/getInfo"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/card"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:text="Animals"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="220dp">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:text="Education"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:text="Employment"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="350dp">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:text="Environment"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:text="Natural Disaster"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="480dp">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:text="Science"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:text="Youth"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
     <com.arlib.floatingsearchview.FloatingSearchView
         android:id="@+id/floating_search_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:floatingSearch_searchBarMarginLeft="10dp"
-        app:floatingSearch_searchBarMarginTop="10dp"
-        app:floatingSearch_searchBarMarginRight="10dp"
-        app:floatingSearch_searchHint="Search..."
-        app:floatingSearch_suggestionsListAnimDuration="250"
-        app:floatingSearch_showSearchKey="false"
+        android:orientation="vertical"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
         app:floatingSearch_leftActionMode="showHamburger"
         app:floatingSearch_menu="@menu/menu_nav"
-        app:floatingSearch_close_search_on_keyboard_dismiss="true"/>
+        app:floatingSearch_searchBarMarginLeft="10dp"
+        app:floatingSearch_searchBarMarginRight="10dp"
+        app:floatingSearch_searchBarMarginTop="10dp"
+        app:floatingSearch_searchHint="Search..."
+        app:floatingSearch_showSearchKey="false"
+        app:floatingSearch_suggestionsListAnimDuration="250">
+    </com.arlib.floatingsearchview.FloatingSearchView>
 
-</LinearLayout>
+</RelativeLayout>
